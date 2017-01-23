@@ -1,0 +1,53 @@
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
+    background-color: #00CCFF;
+    color:black;
+}
+
+thead th {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+}
+
+tbody td {
+    background-color: #CCFFFF;
+    text-align: left;
+}
+table.table-hover tr.even:hover td,
+table.table-hover tr.odd:hover td {
+    background-color: #2ed7ea;
+}
+
+tbody td {
+    background-color: #CCFFFF;
+    text-align: left;
+}
+
+.share-button {
+    visibility: hidden;
+}
+
+table.table-hover tr.even:hover td> .share-button,
+table.table-hover tr.odd:hover td> .share-button{
+    visibility: visible;
+}

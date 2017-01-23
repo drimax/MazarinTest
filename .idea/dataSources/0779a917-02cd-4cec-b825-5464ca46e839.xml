@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mazarintest@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mazarintest">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="cloud4s"/>
+    <schema id="4" parent="1" name="harshika"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="royal"/>
+    <schema id="9" parent="1" name="slbutterflies"/>
+    <schema id="10" parent="1" name="test"/>
+    <table id="11" parent="2" name="t_customer"/>
+    <column id="12" parent="11" name="customerId">
+      <Position>1</Position>
+      <Comment>customer identification number</Comment>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13" parent="11" name="name">
+      <Position>2</Position>
+      <Comment>customer name</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="11" name="email">
+      <Position>3</Position>
+      <Comment>customer email</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="11" name="address">
+      <Position>4</Position>
+      <Comment>customer address</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="11" name="department">
+      <Position>5</Position>
+      <Comment>customers department </Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="17" parent="11" name="PRIMARY">
+      <ColNames>customerId</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

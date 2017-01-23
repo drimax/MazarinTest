@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MazarinTest:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="mazarinTest.war">
+      <element id="artifact" artifact-name="MazarinTest:war exploded" />
+    </root>
+  </artifact>
+</component>
