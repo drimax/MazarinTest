@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li class="active">
-                    <a href="/customer" style="color: #000000"><i class="fa fa-fw fa-dashboard"></i> <span>Customer</span></a>
+                    <a href="/mazarinTest/customer" style="color: #000000"><i class="fa fa-fw fa-dashboard"></i> <span>Customer</span></a>
                 </li>
 
             </ul>

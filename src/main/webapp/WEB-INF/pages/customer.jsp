@@ -54,7 +54,7 @@
 
                     }
                     console.log(dataset);
-                    FileTable=$('#table').DataTable( {
+                    customerTable=$('#table').DataTable( {
                         "data": dataset,
                         "columns": [
                             { "title": "Customer Name" },
@@ -62,16 +62,17 @@
                             { "title": "Address" },
                             { "title" : "Department"}
 
-                        ],
-                        "rowCallback": function( row, data ) {
-                            if ( $.inArray(data.DT_RowId, selected) !== -1 ) {
-                                $(row).addClass('selected');
-                            }
-                        }
+                        ]
                     } );
                 }
             });
-
+            customerTable.on( 'select', function ( e, dt, type, indexes ) {
+                if ( type === 'row' ) {
+                    var data = customerTable.rows( indexes ).data().pluck( 'id' );
+                    console.log(data);
+                    // do something with the ID of the selected items
+                }
+            } );
 
         }
 

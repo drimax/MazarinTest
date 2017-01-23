@@ -38,28 +38,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/#" style="color: #ffffff"><img src="/img/cloud_globe.png" style="height: 60px; margin-top: -15px;"></a>
+            <a class="navbar-brand" href="/mazarinTest/welcome" style="color: #ffffff">MAZARIN</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-custom">
 
                 <li style="display:${pageContext.request.userPrincipal.name == null ? 'none' : 'block'};">
-                    <a href="/dash">DashBoard</a>
+                    <a herf="/mazarinTest/welcome">DashBoard</a>
                 </li>
                 <li id="serviceTab">
-                    <a href="/#secA">Services</a>
+                    <a>Services</a>
                 </li>
                 <li id="contactTab">
-                    <a href="/#secB">Contact</a>
+                    <a>Contact</a>
                 </li>
-                <li style="display:${pageContext.request.userPrincipal.name == null ? 'none' : 'block'}; margin-top: 15px">
-                    ${pageContext.request.userPrincipal.name}
-                </li>
-                <li style="display:${pageContext.request.userPrincipal.name == null ? 'none' : 'block'}">
-                    <a href="javascript:logOut()">Logout</a>
-                </li>
-
             </ul>
         </div>
         <!-- /.navbar-collapse -->

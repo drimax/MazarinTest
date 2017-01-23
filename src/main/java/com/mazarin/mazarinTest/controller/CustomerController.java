@@ -33,17 +33,18 @@ public class CustomerController {
 
         ModelAndView model = new ModelAndView();
         model.setViewName("customer");
-        //model.setViewName("viewCustomer");
         return model;
 
     }
 
     @RequestMapping(value = { "/saveCustomer" }, method = RequestMethod.POST)
-    @ResponseBody
-    public String customerSave(@ModelAttribute CustomerDTO customer) {
+    public ModelAndView customerSave(@ModelAttribute CustomerDTO customer) {
 
         boolean isSuccess = customerService.addCustomer(customer);
-        return "Customer Successfully Added";
+        ModelAndView model = new ModelAndView();
+        model.setViewName("customer");
+        return model;
+
 
     }
 
